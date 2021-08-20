@@ -27,4 +27,34 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz(23);
         assertEquals("",fizzBuzz.findFizzBuzz());
     }
+
+    @Test
+    void shouldReturnFizzBuzzWhenInputIsSeventyFive(){
+        FizzBuzz fizzBuzz = new FizzBuzz(75);
+        assertEquals("FizzBuzz",fizzBuzz.findFizzBuzzUpdated());
+    }
+
+    @Test
+    void shouldReturnFizzWhenInputIsSiz(){
+        FizzBuzz fizzBuzz = new FizzBuzz(6);
+        assertEquals("Fizz",fizzBuzz.findFizzBuzzUpdated());
+    }
+
+    @Test
+    void shouldReturnFizzWhenInputIsSeventyThree(){
+        FizzBuzz fizzBuzz = new FizzBuzz(73);
+        assertEquals("Fizz",fizzBuzz.findFizzBuzzUpdated());
+    }
+
+    @Test
+    void shouldReturnBuzzWhenInputIsThirtyFive(){
+        FizzBuzz fizzBuzz = new FizzBuzz(25);
+        assertEquals("Buzz",fizzBuzz.findFizzBuzzUpdated());
+    }
+
+    @Test
+    void shouldReturnBuzzWhenInputIsFiftyTwo(){
+        FizzBuzz fizzBuzz = new FizzBuzz(52);
+        assertEquals("Buzz",fizzBuzz.findFizzBuzzUpdated());
+    }
 }
